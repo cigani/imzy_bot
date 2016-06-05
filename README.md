@@ -28,3 +28,29 @@ my_post.contents.body = "I'm testing out a bot, and it made this post!";
 // Send the post off!
 imzy.send(authentication, my_post);
 ~~~
+
+##Reference
+All posts require a title. `contents.body` is optional for all types except text.
+
+###Text
+~~~javascript
+post = imzy.post;
+post.type_id = 'text'; //this is default
+post.title = "[title text]"
+post.contents.body = "[body text]";
+~~~
+
+###Link
+I will eventually add function to produce this manually, but for now this is good.
+~~~javascript
+post = imzy.post;
+post.type_id = 'link';
+post.title = "[title text]"
+posts.content.url = "[link]
+posts.content.preview = {
+	"url":"[link]",
+	"title":"[page title]",
+	"text_preview":"[page title subtext/blurb]",
+	"favicon_url":[page favicon (optional)]
+}
+~~~
