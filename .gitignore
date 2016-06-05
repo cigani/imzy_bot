@@ -10,4 +10,4 @@ node_modules
 .npm
 
 #My test file
-test.js
+test*.js
