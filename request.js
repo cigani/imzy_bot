@@ -2,13 +2,11 @@ var http = require("https");
 
 
 
-header = function(sid, type, com) {
-	types = {};
-	types.post = {
+header = function(sid, type) {
+	post = {
 		"method": "POST",
 		"hostname": "www.imzy.com",
 		"port": null,
-		"path": "/api/communities/" + com + "/posts",
 		"headers": {
 			"sid": sid,
 			"origin": "https://www.imzy.com",
@@ -18,17 +16,14 @@ header = function(sid, type, com) {
 			"content-type": "application/json",
 			"accept": "*/*",
 			"dnt": "1",
-			// "referer": "https://www.imzy.com/" + com + "/post/create",
 			"accept-encoding": "gzip, deflate, br",
 			"accept-language": "en-US,en;q=0.8",
 			"cookie": "sid=" + sid,
 			"cache-control": "no-cache",
 		}
-	};
+	}
 
-	// types.comment = {}
-
-	return types[type];
+	return post;
 };
 
 var post = {
