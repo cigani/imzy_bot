@@ -1,4 +1,5 @@
 # Imzy Bot
+<center><img src="https://raw.githubusercontent.com/jacksarick/imzy_bot/master/media/imzy_borg_transparent.png"></center>
 A bot written in javascript for use with Imzy
 
 ##Usage
@@ -32,7 +33,7 @@ imzy.send(authentication, my_post);
 ##Reference
 All posts require a title. `contents.body` is optional for all types except text.
 
-###Text
+###Text Post
 ~~~javascript
 post = imzy.post;
 post.type_id = 'text'; //this is default
@@ -40,7 +41,7 @@ post.title = "[title text]"
 post.contents.body = "[body text]";
 ~~~
 
-###Link
+###Link Post
 I will eventually add function to produce this manually, but for now this is good.
 ~~~javascript
 post = imzy.post;
