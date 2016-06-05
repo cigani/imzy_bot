@@ -46,11 +46,11 @@ I will eventually add function to produce this manually, but for now this is goo
 post = imzy.post;
 post.type_id = 'link';
 post.title = "[title text]"
-posts.content.url = "[link]
+posts.content.url = "[link]"
 posts.content.preview = {
 	"url":"[link]",
 	"title":"[page title]",
 	"text_preview":"[page title subtext/blurb]",
-	"favicon_url":[page favicon (optional)]
+	"favicon_url":"[page favicon (optional)]"
 }
 ~~~
