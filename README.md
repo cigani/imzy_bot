@@ -57,3 +57,13 @@ posts.content.preview = {
 	"favicon_url":"[page favicon (optional)]"
 }
 ~~~
+
+###Image posts
+I can't figure out how to do the upload, so this is a workaround
+~~~javascript
+post = imzy.post;
+post.type_id = 'image';
+post.title = "[title text]"
+post.content.image_url = "[link to image]"
+post.content.image_type = "image/[png, jpg, gif, etc...]"
+~~~
