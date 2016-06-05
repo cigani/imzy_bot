@@ -1,5 +1,7 @@
 # Imzy Bot
-<center><img src="https://raw.githubusercontent.com/jacksarick/imzy_bot/master/media/imzy_borg_transparent.png"></center>
+
+<center><img src="https://raw.githubusercontent.com/jacksarick/imzy_bot/master/media/imzy_borg_transparent_small.png"></center>
+
 A bot written in javascript for use with Imzy
 
 ##Usage
