@@ -1,0 +1,23 @@
+{
+  "name": "imzy_bot",
+  "version": "1.0.0",
+  "description": "A bot for imzy.com",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacksarick/imzy_bot.git"
+  },
+  "keywords": [
+    "imzy",
+    "bot"
+  ],
+  "author": "Jack Sarick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jacksarick/imzy_bot/issues"
+  },
+  "homepage": "https://github.com/jacksarick/imzy_bot#readme"
+}

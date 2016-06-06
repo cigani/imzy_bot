@@ -16,11 +16,12 @@ Sample script to post a simple text post to the Imzy Developers community
 
 ~~~javascript
 // Import the library
-var imzy = require("./path/to/request.js");
+var imzy = require("./path/to/main.js");
 
 // Authenticate
 var token = "asdfghjkl...";
 var authentication = imzy.auth(token, "imzy_developers");
+authentication.path = "/api/communities/imzy_developers/posts"; // More detail on this later
 
 // Make your post
 my_post = imzy.post;
@@ -30,6 +31,12 @@ my_post.contents.body = "I'm testing out a bot, and it made this post!";
 
 // Send the post off!
 imzy.send(authentication, my_post);
+
+//Now check to see if it's on top
+imzy.get_community(token, "imzy_developers", function(data) {
+	data = data;
+	console.log(data[0].title)
+});
 ~~~
 
 ##Reference
